@@ -165,7 +165,6 @@ static void mgos_mqtt_ev(struct mg_connection *nc, int ev, void *ev_data,
           do_subscribe(th);
         }
       } else {
-        call_global_handlers(nc,MG_EV_MQTT_PUBREC, NULL, user_data);
         nc->flags |= MG_F_CLOSE_IMMEDIATELY;
       }
       break;

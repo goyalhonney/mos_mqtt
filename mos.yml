@@ -3,6 +3,8 @@ description: MQTT protocol support
 type: lib
 version: 1.0
 manifest_version: 2017-09-29
+sources:
+  - src
 includes:
   - include
 config_schema:
@@ -35,3 +37,7 @@ tags:
   - c
   - js
   - net
+
+# Temporary, while root manifest change propagates (2018/03/29).
+libs:
+  - origin: https://github.com/mongoose-os-libs/mongoose
